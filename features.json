@@ -41,9 +41,9 @@
     "hemoglobin_max": "Max Hemoglobin (g/L)",
     "rbc_count_max": "Max RBC (×10¹²/L)",
     "eosinophils_abs_max": "Max Eosinophils Abs (×10⁹/L)",
-    "eosinophils_pct_max": "Max Eosinophils % (%)",
+    "eosinophils_pct_max": "Max Eosinophils (%)",
     "neutrophils_abs_min": "Min Neutrophils Abs (×10⁹/L)",
-    "neutrophils_pct_min": "Min Neutrophils % (%)",
+    "neutrophils_pct_min": "Min Neutrophils (%)",
     "AST_min": "Min AST (U/L)"
   },
   "risk_thresholds": {
@@ -51,4 +51,5 @@
     "high": 0.5
   },
   "model_name": "Logistic Regression (external-robust)"
+
 }
