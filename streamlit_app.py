@@ -9,7 +9,7 @@ from pathlib import Path
 st.set_page_config(page_title="AMI–IABP One-Year Mortality Risk Calculator",
                    layout="wide", page_icon="")
 
-# ── Custom styling (labels bigger + bold) ──────────────────────
+# ── Custom styling ──────────────────────
 st.markdown("""
 <style>
 .block-container {padding-top:1rem;}
@@ -41,7 +41,7 @@ div[data-testid="stRadio"] label {
 """, unsafe_allow_html=True)
 
 st.title("AMI–IABP One-Year Mortality Risk Calculator")
-st.caption("Prediction of one-year mortality in AMI patients supported with IABP (logistic regression; internal training, external validation).")
+st.caption("Prediction of one-year mortality in AMI patients supported with IABP (Logistic Regression Model).")
 
 # ── Load model + metadata ─────────────────────────────────────
 try:
@@ -70,7 +70,7 @@ UI_GROUPS = [
     ("Demographics & Hospitalization", ["age", "ICU_LOS"]),
     ("Hematology", ["hemoglobin_min", "hemoglobin_max", "rbc_count_max"]),
     ("Renal Function", ["creatinine_min", "creatinine_max", "eGFR_CKD_EPI_21"]),
-    ("Inflammatory / Immune Markers", ["neutrophils_abs_min", "eosinophils_abs_max",
+    ("Inflammatory Markers", ["neutrophils_abs_min", "eosinophils_abs_max",
                                        "neutrophils_pct_min", "eosinophils_pct_max"]),
     ("Metabolic & Biochemistry", ["sodium_max", "lactate_max", "AST_min"]),
     ("Hemodynamics", ["dbp_post_iabp"]),
@@ -136,3 +136,4 @@ if st.button("Calculate Risk", type="primary", use_container_width=True):
 
 st.markdown("---")
 st.caption("AMI–IABP One-Year Mortality Risk Calculator • Streamlit App• Developed by Zampawala et al., 2025")
+
