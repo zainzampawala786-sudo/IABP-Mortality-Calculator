@@ -1,0 +1,54 @@
+{
+  "features": [
+    "ICU_LOS",
+    "creatinine_max",
+    "beta_blocker_use",
+    "eosinophils_pct_max",
+    "eGFR_CKD_EPI_21",
+    "rbc_count_max",
+    "neutrophils_abs_min",
+    "hemoglobin_min",
+    "lactate_max",
+    "neutrophils_pct_min",
+    "hemoglobin_max",
+    "AST_min",
+    "age",
+    "ticagrelor_use",
+    "dbp_post_iabp",
+    "creatinine_min",
+    "eosinophils_abs_max",
+    "sodium_max",
+    "invasive_ventilation"
+  ],
+  "binary_features": [
+    "beta_blocker_use",
+    "ticagrelor_use",
+    "invasive_ventilation"
+  ],
+  "labels": {
+    "beta_blocker_use": "Beta-Blocker Use",
+    "ticagrelor_use": "Ticagrelor Use",
+    "invasive_ventilation": "Invasive Ventilation",
+    "ICU_LOS": "ICU Length of Stay (days)",
+    "age": "Age (years)",
+    "dbp_post_iabp": "Diastolic BP Post-IABP (mmHg)",
+    "creatinine_min": "Min Creatinine (µmol/L)",
+    "creatinine_max": "Max Creatinine (µmol/L)",
+    "eGFR_CKD_EPI_21": "eGFR (CKD-EPI 2021, mL/min/1.73 m²)",
+    "sodium_max": "Max Sodium (mmol/L)",
+    "lactate_max": "Max Lactate (mmol/L)",
+    "hemoglobin_min": "Min Hemoglobin (g/L)",
+    "hemoglobin_max": "Max Hemoglobin (g/L)",
+    "rbc_count_max": "Max RBC (×10¹²/L)",
+    "eosinophils_abs_max": "Max Eosinophils Abs (×10⁹/L)",
+    "eosinophils_pct_max": "Max Eosinophils % (%)",
+    "neutrophils_abs_min": "Min Neutrophils Abs (×10⁹/L)",
+    "neutrophils_pct_min": "Min Neutrophils % (%)",
+    "AST_min": "Min AST (U/L)"
+  },
+  "risk_thresholds": {
+    "low": 0.2,
+    "high": 0.5
+  },
+  "model_name": "Logistic Regression (external-robust)"
+}
